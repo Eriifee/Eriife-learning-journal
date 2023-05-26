@@ -1,0 +1,384 @@
+html, 
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 500;
+}
+
+.sticky + .content {
+  padding-top: 3em;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 5px 20px;
+}
+
+
+.title {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.chatbox {
+    width: 32px;
+    height: 32px;
+    margin-right: 0.3125em;
+}
+
+
+
+.title-text {
+    color: #0E0E0E;
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+
+a {
+    text-decoration: none;
+    font-size: 0.85rem;
+    padding-left: 2em;
+     color: #0E0E0E;
+    font-weight: 600;
+}
+
+a:hover {
+    color: #9ecbe1;
+}
+
+
+.hero {
+    background-image: url("images/article-image-hero.png");
+    width: 100%;
+    height: 420px;
+    background-size: cover;
+    position: relative;
+}
+
+/* .hero-position {
+    position: relative;
+} */
+
+
+.article-hero {
+    color: white;
+    margin: 0;
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+
+.article-hero-date {
+    font-weight: 300;
+    font-size: 1em;
+    margin-bottom: 0.85em; 
+}
+
+.article-hero-title {
+    line-height: 1.5;
+    font-weight: 700; 
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+.article-hero-title:hover {
+    color: #9ecbe1;
+}
+
+.article-hero-preview {
+    font-size: 1.25em;
+    line-height: 1.7;
+    margin-top: 0.5em;
+    margin-bottom: 0;
+}
+
+
+.article {
+    padding: 0px 20px;
+    margin-top: 2em;
+}
+
+
+.article-img {
+    width: 100%;
+    margin-bottom: 0.85em;
+}
+
+
+.article-date {
+    margin-top: 0;
+    margin-bottom: 1.5em; 
+    font-size: 1em; 
+    font-weight: 500; 
+}
+
+.article-title:hover {
+    color: #9ecbe1;
+    cursor: pointer;
+}
+
+.article-text {
+    margin-top: 1em;
+    margin-bottom: 3.5em;
+    color: #505050;
+    font-size: 1.25em;
+    line-height: 1.5;
+}
+
+
+ a.view {
+    color: 000000;
+    text-decoration: underline;
+    cursor: pointer;
+    display: block;
+    padding: 1.5625em 0;
+    text-align: center;
+    font-size: 1.25rem;
+}
+
+a.view:hover {
+   color:  #9ecbe1;
+}
+
+.hidden {
+    display: none;
+}
+
+
+footer {
+    background-color: #202020;
+    padding: 0.625em 0; 
+    text-align: center;
+  
+}
+
+.footer-text {
+    color: #ECECEC;
+    font-weight: 900;
+    margin-bottom: 0;
+    font-size: 0.85rem;
+}
+
+.fine-print {
+    margin-top: 0.625em; 
+    color: #D7D7D7; 
+    font-size: 0.85rem;
+}
+
+#hidden {
+    display: none;
+}
+
+.profile-img {
+    width: 280px;
+    padding: 1.563em 1.25em;
+    margin-top: 4em;
+}
+
+.about-me-title {
+    padding: 0 1.25em;
+    font-size: 1.85rem; 
+    font-weight: 900;
+}
+ .about-me-sub {
+      padding: 0 1.25em;
+      line-height: 1.5;
+      margin-bottom: 3em;
+      font-size: 1.25em;
+      font-weight: 500;
+ }
+ 
+ .diary-title {
+     padding: 0 1.85em;
+     font-weight: 900;
+     font-size: 1.25em;
+     margin-bottom: 1.85em;
+ }
+ 
+ .diary-text {
+       padding: 0 1.85em;
+       margin-bottom: 1.85em;
+       line-height: 1.5;
+        font-size: 1.25em;
+        font-weight: 500;
+ }
+ 
+ .recent-posts {
+     text-align: center;
+     margin-bottom: 0;
+     font-size: 1.75rem
+ }
+ 
+ .align {
+      padding: 0 1.25em;
+ }
+ 
+ .journey-intro {
+     margin-top: 4em;
+ }
+ 
+ .journey-line-space {
+     line-height: 1.5;
+ }
+ 
+ .image-container {
+     margin-top: 2em;
+     margin-bottom: 2.5em;
+
+ }
+ 
+ .image-container img {
+    width: 100%;
+  
+}
+ 
+
+ 
+ @media(min-width: 768px){
+     
+    .hero {
+        height: 488px;
+    }
+    
+    .title-text {
+        font-size: 1rem;
+    }
+    
+    a {
+        font-size: 0.95rem;
+    }
+    
+    nav {
+    padding: 5px 45px;
+   }
+    
+    .article-hero {
+    padding: 45px;
+}
+
+
+    .article-hero-date {
+        font-size: 1rem;
+    }
+    
+    
+    .article-hero-title {
+         font-size: 2rem;
+    }
+    
+    .article-hero-preview {
+        font-size: 1rem;
+    }
+    
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        grid-gap: 10px;
+        padding: 0 45px;
+        
+    }
+    
+ 
+  .article {
+        padding: 0px 10px;
+       
+    }
+    
+    
+  .article-date {
+      font-size: 0.85em;
+  }  
+  
+  .article-text {
+      font-size: 1rem;
+  }
+  
+  .flex {
+      display: flex;
+      margin-top: 4em;
+      align-items: center;
+
+  } 
+  
+
+  .about-me-title {
+      font-size: 1.5rem;
+      padding: 0;
+  } 
+  
+  .about-me-sub {
+      padding: 0;
+      margin: 0;
+  }
+  
+  .profile-img {
+    padding: 0 2em 0 2.813em ; 
+  
+}
+
+.intro {
+    padding-right: 100px;
+}
+
+.diary-title {
+    padding: 0 1.67em;
+    font-size: 1rem; 
+}
+
+.diary-text {
+    padding: 0 2em;
+    font-size: 0.85rem;
+}
+
+.diary-section {
+    padding-left: 3.5em;
+    padding-right: 100px;
+}
+
+.recent-posts {
+    font-size: 1.25rem;
+}
+
+a.view {
+    font-size: 1.125rem;
+}
+
+  .align {
+      padding: 0 2.8125em;
+ }
+ 
+   .journey-diary {
+       margin-left: 4em;
+   }
+   
+   .journey-title {
+       font-size: 1.25rem;
+   
+   }
+    
+
+ }
